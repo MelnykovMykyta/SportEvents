@@ -9,14 +9,27 @@ import Foundation
 import UIKit
 import SnapKit
 
-class AuthVC: UIViewController {
+final class AuthVC: UIViewController {
     
-    var signInButton: UIButton!
-    var signUpButton: UIButton!
+    private var signInButton: UIButton!
+    private var signUpButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        signInButton.addTarget(self, action: #selector(tapSignIn), for: .touchUpInside)
+        signUpButton.addTarget(self, action: #selector(tapSignUp), for: .touchUpInside)
+    }
+}
+
+private extension AuthVC {
+    
+    @objc func tapSignIn() {
+        VCChanger.changeVC(vc: SignInVC())
+    }
+    
+    @objc func tapSignUp() {
+        //        VCChanger.changeVC(vc: SignUpVC())
     }
 }
 

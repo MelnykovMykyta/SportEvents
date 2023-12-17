@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		771B8E092B2F755C00BB4A2F /* VCChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B8E082B2F755C00BB4A2F /* VCChanger.swift */; };
+		771B8E0B2B2F77AF00BB4A2F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B8E0A2B2F77AF00BB4A2F /* SignInVC.swift */; };
+		771B8E0E2B2F8F2200BB4A2F /* BaseTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B8E0D2B2F8F2200BB4A2F /* BaseTextFieldView.swift */; };
+		771B8E112B2F9B4900BB4A2F /* UIViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B8E102B2F9B4900BB4A2F /* UIViewController + Ext.swift */; };
 		77848F9E2B2F43AA002F4BD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77848F9D2B2F43AA002F4BD4 /* AppDelegate.swift */; };
 		77848FA02B2F43AA002F4BD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77848F9F2B2F43AA002F4BD4 /* SceneDelegate.swift */; };
 		77848FA72B2F43AE002F4BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77848FA62B2F43AE002F4BD4 /* Assets.xcassets */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		771B8E082B2F755C00BB4A2F /* VCChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCChanger.swift; sourceTree = "<group>"; };
+		771B8E0A2B2F77AF00BB4A2F /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		771B8E0D2B2F8F2200BB4A2F /* BaseTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextFieldView.swift; sourceTree = "<group>"; };
+		771B8E102B2F9B4900BB4A2F /* UIViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Ext.swift"; sourceTree = "<group>"; };
 		77848F9A2B2F43AA002F4BD4 /* SportEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77848F9D2B2F43AA002F4BD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77848F9F2B2F43AA002F4BD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,8 +56,32 @@
 				811128556CBEB49DBAE185E4 /* Pods-SportEvents.debug.xcconfig */,
 				9A05EB5F65C8F9F8B224905A /* Pods-SportEvents.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		771B8E072B2F751200BB4A2F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				771B8E0F2B2F9B1B00BB4A2F /* Extensions */,
+				771B8E082B2F755C00BB4A2F /* VCChanger.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		771B8E0C2B2F8EDF00BB4A2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				771B8E0D2B2F8F2200BB4A2F /* BaseTextFieldView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		771B8E0F2B2F9B1B00BB4A2F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				771B8E102B2F9B4900BB4A2F /* UIViewController + Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		77848F912B2F43A9002F4BD4 = {
@@ -73,6 +105,8 @@
 		77848F9C2B2F43AA002F4BD4 /* SportEvents */ = {
 			isa = PBXGroup;
 			children = (
+				771B8E0C2B2F8EDF00BB4A2F /* Views */,
+				771B8E072B2F751200BB4A2F /* Helpers */,
 				77848FB52B2F48D5002F4BD4 /* Controllers */,
 				77848FB22B2F444B002F4BD4 /* Resources */,
 				77848FB12B2F4414002F4BD4 /* Aplication */,
@@ -104,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				77848FB62B2F48E8002F4BD4 /* AuthVC.swift */,
+				771B8E0A2B2F77AF00BB4A2F /* SignInVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -230,8 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				771B8E112B2F9B4900BB4A2F /* UIViewController + Ext.swift in Sources */,
 				77848FB72B2F48E8002F4BD4 /* AuthVC.swift in Sources */,
 				77848F9E2B2F43AA002F4BD4 /* AppDelegate.swift in Sources */,
+				771B8E0B2B2F77AF00BB4A2F /* SignInVC.swift in Sources */,
+				771B8E0E2B2F8F2200BB4A2F /* BaseTextFieldView.swift in Sources */,
+				771B8E092B2F755C00BB4A2F /* VCChanger.swift in Sources */,
 				77848FB42B2F461A002F4BD4 /* D.swift in Sources */,
 				77848FA02B2F43AA002F4BD4 /* SceneDelegate.swift in Sources */,
 			);

@@ -13,7 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         self.setupWindow(with: scene)
-        self.changeVC(vc: AuthVC())
+        VCChanger.changeVC(vc: SignInVC())
     }
     
     private func setupWindow(with scene: UIScene) {
@@ -24,19 +24,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window?.overrideUserInterfaceStyle = .dark
         self.window?.backgroundColor = D.Colors.mainColor
     }
-    
-    func changeVC(vc: UIViewController) {
-            if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-                if let window = scene.windows.first {
-                    UIView.transition(with: window, duration: 0.6, options: .transitionCrossDissolve, animations: {
-                        if let previousController = window.rootViewController {
-                            previousController.dismiss(animated: false, completion: nil)
-                        }
-                        vc.modalPresentationStyle = .fullScreen
-                        window.rootViewController = vc
-                    }, completion: nil)
-                }
-            }
-        }
 }
-
