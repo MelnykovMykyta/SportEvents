@@ -11,6 +11,7 @@
 		771B8E0B2B2F77AF00BB4A2F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B8E0A2B2F77AF00BB4A2F /* SignInVC.swift */; };
 		771B8E0E2B2F8F2200BB4A2F /* BaseTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B8E0D2B2F8F2200BB4A2F /* BaseTextFieldView.swift */; };
 		771B8E112B2F9B4900BB4A2F /* UIViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771B8E102B2F9B4900BB4A2F /* UIViewController + Ext.swift */; };
+		776491C12B33A3F4003C7127 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776491C02B33A3F4003C7127 /* SignUpVC.swift */; };
 		77848F9E2B2F43AA002F4BD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77848F9D2B2F43AA002F4BD4 /* AppDelegate.swift */; };
 		77848FA02B2F43AA002F4BD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77848F9F2B2F43AA002F4BD4 /* SceneDelegate.swift */; };
 		77848FA72B2F43AE002F4BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77848FA62B2F43AE002F4BD4 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		771B8E0A2B2F77AF00BB4A2F /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		771B8E0D2B2F8F2200BB4A2F /* BaseTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextFieldView.swift; sourceTree = "<group>"; };
 		771B8E102B2F9B4900BB4A2F /* UIViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Ext.swift"; sourceTree = "<group>"; };
+		776491C02B33A3F4003C7127 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		77848F9A2B2F43AA002F4BD4 /* SportEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77848F9D2B2F43AA002F4BD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77848F9F2B2F43AA002F4BD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				77848FB62B2F48E8002F4BD4 /* AuthVC.swift */,
 				771B8E0A2B2F77AF00BB4A2F /* SignInVC.swift */,
+				776491C02B33A3F4003C7127 /* SignUpVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				771B8E112B2F9B4900BB4A2F /* UIViewController + Ext.swift in Sources */,
+				776491C12B33A3F4003C7127 /* SignUpVC.swift in Sources */,
 				77848FB72B2F48E8002F4BD4 /* AuthVC.swift in Sources */,
 				77848F9E2B2F43AA002F4BD4 /* AppDelegate.swift in Sources */,
 				771B8E0B2B2F77AF00BB4A2F /* SignInVC.swift in Sources */,
@@ -420,7 +424,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +454,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

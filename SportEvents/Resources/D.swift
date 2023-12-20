@@ -24,9 +24,13 @@ struct D {
         static let signInButtonLabel = "Вхід"
         static let signUpButtonLabel = "Реєстрація"
         static let createUserLabel = "Створити обліковий запис"
-        static let signInVCLabel = "Вітаємо"
+        static let signInUserLabel = "Увійти в свій обліковий запис"
+        static let forgotPasswordLabel = "Забули пароль?"
+        static let signInVCLabel = "Вітаємо!"
         static let emailPlaceholder = "Введіть email"
         static let passwordPlaceholder = "Введіть пароль"
+        static let signUpVCLabel = "Реєстрація"
+        static let namePlaceholder = "Введіть ім'я"
     }
     
     struct Sizes {
