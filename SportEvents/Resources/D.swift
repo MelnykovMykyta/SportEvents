@@ -22,7 +22,7 @@ struct D {
         static let mainVCLabel = "Останні спортивні новини та івенти"
         static let mainVCDesc = "Отримайте широкий спектр інформації про спортивні події, розклад матчів, можливість придбання квитків та зручну систему сповіщень щодо останніх новин і результатів улюблених команд."
         static let signInButtonLabel = "Вхід"
-        static let signUpButtonLabel = "Реєстрація"
+        static let signUpButtonLabel = "Зареєструвати"
         static let createUserLabel = "Створити обліковий запис"
         static let signInUserLabel = "Увійти в свій обліковий запис"
         static let forgotPasswordLabel = "Забули пароль?"

@@ -37,16 +37,16 @@ class SignUpVC: UIViewController {
             return
         }
         print(name)
-        print(email)
-        print(password)
+        print(email.checkEmail())
+        print(password.checkEmail())
     }
     
     @objc private func signIn() {
-        VCChanger.changeVC(vc: SignUpVC())
+        VCChanger.changeVC(vc: SignInVC())
     }
     
     @objc private func forgotPassword() {
-//        VCChanger.changeVC(vc: SignUpVC())
+        //        VCChanger.changeVC(vc: SignUpVC())
     }
 }
 
@@ -80,40 +80,41 @@ private extension SignUpVC {
         view.addSubview(textFieldsSV)
         
         nameView = BaseTextFieldView()
+        nameView.textField.textContentType = .name
         nameView.textField.placeholder = D.Texts.namePlaceholder
         textFieldsSV.addArrangedSubview(nameView)
         
         emailView = BaseTextFieldView()
-        emailView.textField.placeholder = D.Texts.emailPlaceholder
-        textFieldsSV.addArrangedSubview(emailView)
-        
-        emailView = BaseTextFieldView()
+        emailView.textField.textContentType = .emailAddress
+        emailView.textField.keyboardType = .emailAddress
         emailView.textField.placeholder = D.Texts.emailPlaceholder
         textFieldsSV.addArrangedSubview(emailView)
         
         passwordView = BaseTextFieldView()
+        passwordView.textField.textContentType = .password
+        passwordView.textField.isSecureTextEntry = true
         passwordView.textField.placeholder = D.Texts.passwordPlaceholder
         textFieldsSV.addArrangedSubview(passwordView)
         
         signUpButton = UIButton(type: .system)
-        signUpButton.setTitle(D.Texts.signInButtonLabel, for: .normal)
+        signUpButton.setTitle(D.Texts.signUpButtonLabel, for: .normal)
         signUpButton.backgroundColor = D.Colors.signInButtonColor
         signUpButton.tintColor = D.Colors.whiteTextColor
         signUpButton.layer.cornerRadius = 12
         signUpButton.layer.masksToBounds = true
         textFieldsSV.addArrangedSubview(signUpButton)
         
-        signInButton = UIButton(type: .system)
-        signInButton.setTitle(D.Texts.signInUserLabel, for: .normal)
-        signInButton.backgroundColor = .clear
-        signInButton.tintColor = D.Colors.greyTextColor
-        textFieldsSV.addArrangedSubview(signInButton)
-        
         forgotPasswordButton = UIButton(type: .system)
         forgotPasswordButton.setTitle(D.Texts.forgotPasswordLabel, for: .normal)
         forgotPasswordButton.backgroundColor = .clear
         forgotPasswordButton.tintColor = D.Colors.greyTextColor
-        view.addSubview(forgotPasswordButton)
+        textFieldsSV.addArrangedSubview(forgotPasswordButton)
+        
+        signInButton = UIButton(type: .system)
+        signInButton.setTitle(D.Texts.signInUserLabel, for: .normal)
+        signInButton.backgroundColor = .clear
+        signInButton.tintColor = D.Colors.greyTextColor
+        view.addSubview(signInButton)
         
         signImage.snp.makeConstraints {
             $0.top.leading.trailing.equalToSuperview()
@@ -138,8 +139,8 @@ private extension SignUpVC {
         
         signInButton.snp.makeConstraints { $0.height.equalTo(D.Sizes.authButtonHeight) }
         
-        forgotPasswordButton.snp.makeConstraints {
-            $0.centerY.equalToSuperview()
+        signInButton.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
             $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }
     }
